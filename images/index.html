@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+ <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <header> 
+        <div id="titulo" class="text1">
+          <h1> 0000.0000.0000.0000</h1>
+        </div>
+        <div   id="titulo2" class="text2">
+          <h1> jane apleizt</h1>
+        </div>
+        <div id="titulo3" class="text3">
+          <h1>00-00</h1>
+    </div>
+    <div id="img" class="img4">
+      <img src="favicon-32x32.png" alt="imagem do cartao">
+    </div>
+    <div  id="img" class="img1">
+       <img src="bg-main-desktop.png" alt="imagem do site">
+    </div>
+    <div  id="img" class="img2">
+     <img src="bg-card-front.png" alt="imagem do cartao">
+    </div>
+    <div  id="img" class="img3">
+        <img src="bg-card-back.png" alt="imagem do cartao">
+     </div>
+</header>
+<form  id="formul" class="lista">
+    <label for="nome">Nome do cartao:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+    <label for="numero">Número do cartao:</label>
+        <input type="number" id="numero" name="numero" required>
+        <br><br>
+    <label for="data-nascimento">Data do cartao:</label>
+        <input type="date" id="datanascimento" name="data-nascimento" required>
+        <br><br>
+    <label for="numero-cartao">cvc:</label>
+        <input type="number" id="numerocartao" name="numero-cartao" pattern="\d{16}" maxlength="16" required>
+        <br><br>
+    <button type="submit">Enviar</button>
+</form>
+<div id="exibirdados" class="dados" style="display: none ;">
+    
+    <p class="dado1"> <span id="exibirnome"></span></p>
+    <p class="dado2"> <span id="exibirnumero"></span></p>
+    <p class="dado3"> <span id="exibirdata"></span></p>
+    <p class="dado4"> <span id="exibircvc"></span></p>
+</div>
+<p class="mensagem" id="mensagem">obrigado!</p>
+<p class="mensagem2" id="mensagem2">adicionamos os detalhes no seu cartao</p>
+<button  id="butao2" class="butao2" type="submit">continuar</button>
+<script src="./script.js"></script>
+</body>
+</html>
